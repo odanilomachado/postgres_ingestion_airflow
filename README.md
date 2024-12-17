@@ -61,4 +61,4 @@ E após 4 minutos com a DAG ativa, temos 4 execuções bem sucedidas e, portanto
 <img src='./docs/count_four_minutes.png' alt='Extração e Carregamento de dados em bucket S3 na AWS'/>
 </div>
 
-Embora simples, este projeto pode ser uma base para uma aplicação mais robusta em um cenário real, onde são feitas requisições em API's para ingestão em bancos de dados ou Data Warehouse ou Data Lakes.
+Embora simples, este projeto pode ser uma base para uma aplicação mais robusta em um cenário real, onde são feitas requisições em API's para ingestão em bancos de dados, Data Warehouse ou Data Lake.
