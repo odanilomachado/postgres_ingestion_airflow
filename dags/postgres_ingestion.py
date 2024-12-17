@@ -77,5 +77,4 @@ with DAG(
         python_callable=_load_to_db
     )
 
-
     request_api >> load_to_db
