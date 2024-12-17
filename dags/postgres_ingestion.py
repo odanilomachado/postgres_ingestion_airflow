@@ -60,10 +60,10 @@ def _load_to_db(ti):
     users_df.to_sql(schema='public', name='users', con=database_connection(), index=False, if_exists='append')
 
 with DAG(
-    'exemplo_pipeline',
+    'ingest_postgre',
     start_date=datetime(2024, 12, 17),
-    tags=['curso airflow','aula02'],
-    schedule_interval='* 0 * * *',
+    tags=['airflow_project'],
+    schedule_interval='* * * * *',
     catchup=False
 ) as dag:
     

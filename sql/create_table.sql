@@ -8,3 +8,8 @@ date_of_birth date,
 cell_phone VARCHAR(40), 
 phone VARCHAR(40)
 );
+
+select * from users;
+
+select count(*) from users;
+
