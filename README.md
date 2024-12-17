@@ -4,12 +4,12 @@
 
 ## Introdução
 
-    As ferramentas de orquestração de pipeline de dados desempenham um papel essencial no dia dia de trabalho do engenheiro de dados. Neste projeto, foi utilizado o Apache Airflow, instalado numa máquina local e rodando dentro de um contâiner no Docker, para automatizar a ingestão de dados provenientes de uma API dentro do banco de dados PostgreSQL. Os dados utilizados são do site [Random User Generator API](https://randomuser.me/documentation), sendo fictícios e apenas para fins didáticos. Para este projeto, foi selecionado o número de [15 registros por requisição](https://randomuser.me/api/?results=15).
+As ferramentas de orquestração de pipeline de dados desempenham um papel essencial no dia dia de trabalho do engenheiro de dados. Neste projeto, foi utilizado o Apache Airflow, instalado numa máquina local e rodando dentro de um contâiner no Docker, para automatizar a ingestão de dados provenientes de uma API dentro do banco de dados PostgreSQL. Os dados utilizados são do site [Random User Generator API](https://randomuser.me/documentation), sendo fictícios e apenas para fins didáticos. Para este projeto, foi selecionado o número de [15 registros por requisição](https://randomuser.me/api/?results=15).
 
 ## Depedências do projeto
-- Python 3.13
-- Docker
-- Apache Airflow
+- [Python 3.13](https://www.python.org)
+- [Docker](https://docs.docker.com/)
+- [Apache Airflow](https://airflow.apache.org/docs/)
 
 ## Bibliotecas e módulos utilizadas
 - pandas
@@ -49,10 +49,6 @@ Após a primeira execução, temos a primeira ingestão de dados, com 15 novos r
 
 <div style='background-color:#fff;padding:24px;'>
 <img src='./docs/first.png' alt='Extração e Carregamento de dados em bucket S3 na AWS'/>
-</div>
-
-<div style='background-color:#fff;padding:24px;'>
-<img src='./docs/count_first_minute.png' alt='Extração e Carregamento de dados em bucket S3 na AWS'/>
 </div>
 
 E após 4 minutos com a DAG ativa, temos 4 execuções bem sucedidas e, portanto, um total de 60 registros:
