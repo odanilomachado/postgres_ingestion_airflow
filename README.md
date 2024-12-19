@@ -4,7 +4,7 @@
 
 ## Introdução
 
-As ferramentas de orquestração de pipeline de dados desempenham um papel essencial no dia a dia de trabalho do engenheiro de dados. Neste projeto, foi utilizado o Apache Airflow, instalado numa máquina local e rodando dentro de um contâiner no Docker, para automatizar a ingestão de dados provenientes de uma API dentro do banco de dados PostgreSQL. Os dados utilizados são do site [Random User Generator API](https://randomuser.me/documentation), sendo fictícios e apenas para fins didáticos. Para este projeto, foi selecionado o número de [15 registros por requisição](https://randomuser.me/api/?results=15).
+As ferramentas de orquestração de pipeline de dados desempenham um papel essencial no dia a dia de trabalho do engenheiro de dados. Neste projeto, foi utilizado o Apache Airflow, instalado numa máquina local e rodando dentro de um contâiner no Docker, para automatizar a ingestão de dados provenientes de uma API dentro do banco de dados PostgreSQL on-premise. Os dados utilizados são do site [Random User Generator API](https://randomuser.me/documentation), sendo fictícios e apenas para fins didáticos. Para este projeto, foi selecionado o número de [15 registros por requisição](https://randomuser.me/api/?results=15).
 
 ## Depedências do projeto
 - [Python 3.13](https://www.python.org)
