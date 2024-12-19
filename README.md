@@ -10,6 +10,7 @@ As ferramentas de orquestração de pipeline de dados desempenham um papel essen
 - [Python 3.13](https://www.python.org)
 - [Docker](https://docs.docker.com/)
 - [Apache Airflow](https://airflow.apache.org/docs/)
+- [PostreSQL](https://www.postgresql.org/docs/)
 
 ## Bibliotecas e módulos utilizados
 - pandas
