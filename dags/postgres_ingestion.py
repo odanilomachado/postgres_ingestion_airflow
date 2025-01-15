@@ -4,6 +4,7 @@ from configparser import ConfigParser
 from sqlalchemy import create_engine
 from datetime import datetime
 from airflow import DAG
+from airflow.operators.dummy import DummyOperator
 from airflow.operators.python import PythonOperator
 
 TMP_DIR = '/tmp/'
@@ -66,7 +67,11 @@ with DAG(
     schedule_interval='* * * * *',
     catchup=False
 ) as dag:
-    
+
+    start_dag = DummyOperator(
+        task_id = 'start_dag'
+    )
+
     request_api = PythonOperator(
         task_id='request_api',
         python_callable=_request_api
@@ -77,4 +82,8 @@ with DAG(
         python_callable=_load_to_db
     )
 
-    request_api >> load_to_db
+    end_dag = DummyOperator(
+        task_id = 'end_dag'
+    )
+
+    start_dag >> request_api >> load_to_db >> end_dag
